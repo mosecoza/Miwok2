@@ -35,19 +35,19 @@ public class ColorsActivity extends AppCompatActivity {
 
         if(addColors()){
         assert listView != null;
-        listView.setAdapter(new MiwokAdapter(this, words));}
+        listView.setAdapter(new MiwokAdapter(ColorsActivity.this, words, R.color.category_colors));}
 
     }
 
     protected boolean addColors(){
-        words.add(new MiwokWord("red", "wetetti"));
-        words.add(new MiwokWord("mustard yellow", "chiwite"));
-        words.add(new MiwokWord("dusty yellow", "topiise"));
-        words.add(new MiwokWord("green", "chokokki"));
-        words.add(new MiwokWord("brown", "takaakki"));
-        words.add(new MiwokWord("gray", "topoppi"));
-        words.add(new MiwokWord("black", "kululli"));
-        words.add(new MiwokWord("white", "kelelli"));
+        words.add(new MiwokWord("red", "wetetti", R.drawable.color_red));
+        words.add(new MiwokWord("mustard yellow", "chiwite", R.drawable.color_mustard_yellow ));
+        words.add(new MiwokWord("dusty yellow", "topiise", R.drawable.color_dusty_yellow));
+        words.add(new MiwokWord("green", "chokokki", R.drawable.color_green));
+        words.add(new MiwokWord("brown", "takaakki", R.drawable.color_brown));
+        words.add(new MiwokWord("gray", "topoppi", R.drawable.color_gray));
+        words.add(new MiwokWord("black", "kululli", R.drawable.color_black));
+        words.add(new MiwokWord("white", "kelelli", R.drawable.color_white));
 
         if(words.isEmpty()){
             return false;

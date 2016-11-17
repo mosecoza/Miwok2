@@ -35,20 +35,20 @@ public class FamilyActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list_view_main);
 
         assert listView != null;
-        listView.setAdapter(new MiwokAdapter(this, words));}
+        listView.setAdapter(new MiwokAdapter(FamilyActivity.this, words, R.color.category_family));}
 
     }
     public Boolean hasAddedValues(){
-        words.add(new MiwokWord("father", "epe"));
-        words.add(new MiwokWord("mother", "eta"));
-        words.add(new MiwokWord("son", "angsi"));
-        words.add(new MiwokWord("daughter", "tune"));
-        words.add(new MiwokWord("older brother", "taachi"));
-        words.add(new MiwokWord("younger brother", "chalitti"));
-        words.add(new MiwokWord("older sister", "tete"));
-        words.add(new MiwokWord("younger sister", "kolliti"));
-        words.add(new MiwokWord("grandmother", "ama"));
-        words.add(new MiwokWord("grandfather", "paapa"));
+        words.add(new MiwokWord("father", "epe", R.drawable.family_father));
+        words.add(new MiwokWord("mother", "eta", R.drawable.family_mother));
+        words.add(new MiwokWord("son", "angsi", R.drawable.family_son));
+        words.add(new MiwokWord("daughter", "tune", R.drawable.family_daughter));
+        words.add(new MiwokWord("older brother", "taachi", R.drawable.family_older_brother));
+        words.add(new MiwokWord("younger brother", "chalitti", R.drawable.family_younger_brother));
+        words.add(new MiwokWord("older sister", "tete", R.drawable.family_older_sister));
+        words.add(new MiwokWord("younger sister", "kolliti", R.drawable.family_younger_sister));
+        words.add(new MiwokWord("grandmother", "ama", R.drawable.family_grandmother));
+        words.add(new MiwokWord("grandfather", "paapa", R.drawable.family_grandfather));
 
         if(words.isEmpty()){
             return false;

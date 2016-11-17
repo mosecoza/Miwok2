@@ -29,19 +29,19 @@ public class PhrasesActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<MiwokWord> miwok_word = new ArrayList<MiwokWord>();
-        miwok_word.add(new MiwokWord("one", "lutti"));
-        miwok_word.add(new MiwokWord("two", "ottiko"));
-        miwok_word.add(new MiwokWord("three", "tolookosu"));
-        miwok_word.add(new MiwokWord("four", "oyisa"));
-        miwok_word.add(new MiwokWord("five", "massokka"));
-        miwok_word.add(new MiwokWord("six", "temmokka"));
-        miwok_word.add(new MiwokWord("seven", "tenekaku"));
-        miwok_word.add(new MiwokWord("eight", "kawinta"));
-        miwok_word.add(new MiwokWord("nine", "wo'e"));
-        miwok_word.add(new MiwokWord("ten", "na'aacha"));
+        miwok_word.add(new MiwokWord("Where are you going?","minto wuksus", R.raw.phrase_where_are_you_going));
+        miwok_word.add(new MiwokWord("What is your name?","tinnә oyaase'nә", R.raw.phrase_what_is_your_name));
+        miwok_word.add(new MiwokWord("My name is...","oyaaset...", R.raw.phrase_my_name_is));
+        miwok_word.add(new MiwokWord("How are you feeling?","michәksәs?", R.raw.phrase_how_are_you_feeling));
+        miwok_word.add(new MiwokWord("I’m feeling good.","kuchi achit", R.raw.phrase_im_feeling_good));
+        miwok_word.add(new MiwokWord("Are you coming?","әәnәs'aa?", R.raw.phrase_are_you_coming));
+        miwok_word.add(new MiwokWord("Yes, I’m coming.","hәә’ әәnәm", R.raw.phrase_yes_im_coming));
+        miwok_word.add(new MiwokWord("I’m coming.","әәnәm", R.raw.phrase_im_coming));
+        miwok_word.add(new MiwokWord("Let’s go.","yoowutis", R.raw.phrase_lets_go));
+        miwok_word.add(new MiwokWord("Come here.","әnni'nem", R.raw.phrase_come_here));
 
 
-        MiwokAdapter itemsAdapter = new MiwokAdapter(this, miwok_word);
+        MiwokAdapter itemsAdapter = new MiwokAdapter(PhrasesActivity.this, miwok_word, R.color.category_family);
 
         ListView listView = (ListView) findViewById(R.id.list_view_main);
 

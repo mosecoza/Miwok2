@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/image_identify"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
         android:layout_gravity="center"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -17,10 +17,9 @@
         android:contentDescription="@string/stuff" />
 
     <LinearLayout
+        android:id="@+id/text_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
         android:layout_weight="0.8"
         android:orientation="vertical">
 
@@ -29,16 +28,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:background="#fff"
-            tools:text="one" />
+            android:fontFamily="sans-serif-black"
+            android:elevation="4dp" />
 
         <TextView
             android:id="@+id/miwok_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:background="#eee"
-            tools:text="lutti" />
+            android:fontFamily="sans-serif-bold"
+            android:layout_margin="2dp"/>
     </LinearLayout>
 
 </LinearLayout>

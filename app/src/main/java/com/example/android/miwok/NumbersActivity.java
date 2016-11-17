@@ -33,7 +33,7 @@ public class NumbersActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.list_view_main);
 
         if(hasAddedValues()) {
-            MiwokAdapter itemsAdapter = new MiwokAdapter(NumbersActivity.this, words);
+            MiwokAdapter itemsAdapter = new MiwokAdapter(NumbersActivity.this, words, R.color.category_numbers);
             listView.setAdapter(itemsAdapter);
         }
 
@@ -41,23 +41,21 @@ public class NumbersActivity extends AppCompatActivity {
 
 
     public Boolean hasAddedValues(){
-        words.add(0, new MiwokWord("one", "lutti"));
-        words.add(1, new MiwokWord("two", "ottiko"));
-        words.add(2, new MiwokWord("three", "tolookosu"));
-        words.add(3, new MiwokWord("four", "oyisa"));
-        words.add(4, new MiwokWord("five", "massokka"));
-        words.add(5, new MiwokWord("six", "temmokka"));
-        words.add(6, new MiwokWord("seven", "tenekaku"));
-        words.add(7, new MiwokWord("eight", "kawinta"));
-        words.add(8, new MiwokWord("nine", "wo'e"));
-        words.add(9, new MiwokWord("ten", "na'aacha"));
+        words.add(new MiwokWord("one", "lutti", R.drawable.number_one));
+        words.add(new MiwokWord("two", "ottiko", R.drawable.number_two));
+        words.add( new MiwokWord("three", "tolookosu", R.drawable.number_three));
+        words.add(new MiwokWord("four", "oyisa", R.drawable.number_four));
+        words.add( new MiwokWord("five", "massokka", R.drawable.number_five));
+        words.add( new MiwokWord("six", "temmokka", R.drawable.number_six));
+        words.add( new MiwokWord("seven", "tenekaku", R.drawable.number_seven));
+        words.add( new MiwokWord("eight", "kawinta", R.drawable.number_eight));
+        words.add( new MiwokWord("nine", "wo`e", R.drawable.number_nine));
+        words.add( new MiwokWord("ten", "na`aacha", R.drawable.number_ten));
 
         if(words.isEmpty()){
             return false;
         } else {
             return true;
-        }
-
-    }
+        }}
 
 }
